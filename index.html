@@ -1,99 +1,78 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>index.html</title>
+  <title>Document</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="font-sans bg-white">
-  <header class="  items-center px-[55px] pt-[45px] pb-[10px] bg-[#fffefe]">
-    <div class="max-w-[1440px] mx-auto py-5 flex justify-around items-center">
-    <div class="text-center">
-      <p><a href="#" class="text-black font-black tracking-wide">МАКСИМ КОРСАКОВ</a></p>
-      <p><a href="#" class="text-[#2b2222] tracking-wide">Персональный коуч</a></p>
+<body class="font-sans bg-white ">
+
+  <header class="bg-[#fffefe] sm:px-5  md:px-10 xl:px-[55px] pt-5 pb-2">
+    <div class="max-w-[1440px] mx-auto flex justify-between items-center px-5">
+      <div class="text-center">
+        <p><a href="#" class="text-black font-black tracking-wide text-[24px] md:text-[30px] xl:text-[40px]">МАКСИМ КОРСАКОВ</a></p>
+        <p><a href="#" class="text-[#2b2222] tracking-wide text-[16px] md:text-[20px]">Персональный коуч</a></p>
+      </div>
+
+      <div class="lg:hidden flex align-center">
+          <img class="w-[30px]" src="img/more.png" alt="">
+      </div>
+
+      <ul id="navMenu" class="hidden lg:flex gap-5 text-[17px]">
+        <li><a href="#" class="text-[#57BBBF]">Главная</a></li>
+        <li><a href="#" class="text-black hover:text-[#57BBBF] transition">Обо мне</a></li>
+        <li><a href="#" class="text-black hover:text-[#57BBBF] transition">События</a></li>
+        <li><a href="#" class="text-black hover:text-[#57BBBF] transition">Блог</a></li>
+        <li><a href="#" class="text-black hover:text-[#57BBBF] transition">Контакты</a></li>
+      </ul>
     </div>
-    <ul class="flex  gap-5 text-[17px]">
-      <li><a href="#" class="text-[#57BBBF]">Главная</a></li>
-      <li><a href="#" class="text-black hover:text-[#57BBBF] transition">Обо мне</a></li>
-      <li><a href="#" class="text-black hover:text-[#57BBBF] transition">События</a></li>
-      <li><a href="#" class="text-black hover:text-[#57BBBF] transition">Блог</a></li>
-      <li><a href="#" class="text-black hover:text-[#57BBBF] transition">Контакты</a></li>
+
+    <ul class="lg:hidden hidden mt-4 space-y-2 text-center text-[17px]">
+      <li><a href="#" class="block text-[#57BBBF]">Главная</a></li>
+      <li><a href="#" class="block text-black hover:text-[#57BBBF] transition">Обо мне</a></li>
+      <li><a href="#" class="block text-black hover:text-[#57BBBF] transition">События</a></li>
+      <li><a href="#" class="block text-black hover:text-[#57BBBF] transition">Блог</a></li>
+      <li><a href="#" class="block text-black hover:text-[#57BBBF] transition">Контакты</a></li>
     </ul>
-    </div>
   </header>
 
-  <div class="w-full h-[900px] flex justify-center items-center bg-cover bg-fixed bg-no-repeat" style="background-image: url('./img/0.jpg');">
-    <div class="flex flex-col items-center text-center space-y-6">
-      <p class="tracking-[0.18em] text-[17px] text-white">УСПЕХ — ЭТО НАУКА, ЕСЛИ У ВАС ЕСТЬ УСЛОВИЯ, ВЫ ПОЛУЧИТЕ</p>
-      <h1 class="text-[110px] font-black tracking-[0.1em] text-white">РЕЗУЛЬТАТ</h1>
-      <div>
-        <button class="w-[170px] h-[40px] text-white bg-black border-2 border-black hover:bg-transparent hover:text-black transition">Записаться</button>
-      </div>
+  <section class="w-full min-h-[500px] sm:min-h-[600px] xl:min-h-[900px] bg-cover bg-fixed bg-no-repeat flex items-center justify-center text-center px-4 py-6" style="background-image: url('./img/0.jpg');">
+    <div class="space-y-6">
+      <p class="tracking-[0.18em] text-white text-[17px] sm:text-[20px] lg:text-[22px]">УСПЕХ — ЭТО НАУКА, ЕСЛИ У ВАС ЕСТЬ УСЛОВИЯ, ВЫ ПОЛУЧИТЕ</p>
+      <h1 class="text-white text-[30px] xl:text-[90px] tracking-[0.1em] font-bold">РЕЗУЛЬТАТ</h1>
+      <button class="w-[150px] h-[40px] bg-black text-white border border-black hover:bg-transparent hover:text-black transition">Записаться</button>
     </div>
-  </div>
+  </section>
 
-  <div class="w-full flex justify-center">
-    <div class="w-1/2 flex flex-col justify-center pl-[190px] space-y-6">
-      <div class="w-[45px] h-[1px] bg-black mb-5"></div>
-      <h3 class="text-[42px] font-black leading-[1.2em] tracking-[0.1em]">МАКСИМ<br>КОРСАКОВ</h3>
-      <p class="text-[15px] leading-[1.7]">
-        Это текст. Нажмите один раз и выберите <br />
-        «Редактировать текст» или просто кликните <br />
-        дважды, чтобы добавить свой текст и настроить <br />
-        шрифт. Вы можете переместить его в любое <br />
-        место на странице. Расскажите посетителям сайта <br />
-        о себе.
+  <section class="flex flex-col lg:flex-row items-center justify-center w-full px-4 py-6 gap-10">
+    <div class="lg:w-1/2 space-y-6">
+      <div class="w-[45px] h-[1px] bg-black hidden sm:block mb-5"></div>
+      <h3 class="text-[30px] xl:text-[42px] font-black leading-[1.2] tracking-[0.1em]">МАКСИМ<br>КОРСАКОВ</h3>
+      <p class="text-[15px] leading-relaxed">
+        Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и настроить шрифт.
       </p>
-      <p class="text-[15px] leading-[1.7]">
-        Здесь будет удачно смотреться текст о вашей <br />
-        компании и услугах. Используйте эту <br />
-        возможность, чтобы выгодно представить <br />
-        себя и свою компанию клиентам.
+      <p class="text-[15px] leading-relaxed">
+        Здесь будет удачно смотреться текст о вашей компании и услугах. Используйте эту возможность, чтобы выгодно представить себя и свою компанию клиентам.
       </p>
-      <button class="w-[167px] h-[40px] text-white bg-black border-2 border-black hover:bg-[#fff0f0] hover:text-black transition">Подробнее</button>
+      <button class="w-[167px] h-[40px] bg-black text-white border border-black hover:bg-[#fff0f0] hover:text-black transition">Подробнее</button>
     </div>
-    <div class="w-1/2 h-[700px] bg-cover bg-no-repeat" style="background-image: url('./img/1.jpg');"></div>
-  </div>
+    <div class="lg:w-1/2 h-[300px] sm:h-[400px] md:h-[450px] xl:h-[700px] bg-cover bg-no-repeat w-full" style="background-image: url('./img/1.jpg');"></div>
+  </section>
 
+  <section class="bg-cover bg-fixed bg-no-repeat pt-10" style="background-image: url('./img/2.jpg');">
+    <div class="text-center">
+      <h2 class="text-[30px] md:text-[35px] xl:text-[42px] font-black leading-tight">КАК Я МОГУ <br> ВАМ ПОМОЧЬ</h2>
+    </div>
 
-<div class="w-full h-[850px] pt-[30px] bg-cover bg-fixed bg-no-repeat" style="background-image: url('./img/2.jpg');">
-  <div class="pt-[30px] pl-[300px]">
-    <div class="w-[50px] h-[2px] bg-black mb-5"></div>
-    <h2 class="text-[42px] font-black leading-[1.2em]">КАК Я МОГУ <br> ВАМ ПОМОЧЬ</h2>
-  </div>
-
-  <div class="w-full pt-[90px] flex flex-col items-center justify-center">
-    <div class="flex justify-center gap-[35px] flex-wrap">
-      
-      <div class="w-[281px] p-[31px] bg-white text-center">
-        <h2 class="text-[20px] font-light mb-[25px]">
-          <a href="#" class="text-black hover:text-[#26633d] transition">Саморазвитие</a>
-        </h2>
-        <p class="mb-2">45 минут</p>
+    <div class="flex flex-wrap justify-center gap-5 py-10 px-4">
+      <div class="bg-white p-6 text-center w-full sm:w-[45%] lg:w-[281px]">
+        <h3 class="text-[20px] font-light mb-4"><a href="#" class="hover:text-[#26633d] transition">Саморазвитие</a></h3>
+        <p>45 минут</p>
         <p>RUB 900</p>
-        <button class="w-[124px] h-[40px] mt-[10px] text-white bg-black border border-black hover:opacity-70 transition">Записаться</button>
+        <button class="mt-4 w-[124px] h-[40px] bg-black text-white border border-black hover:opacity-70 transition">Записаться</button>
       </div>
-
-      <div class="w-[281px] p-[31px] bg-white text-center">
-        <h2 class="text-[20px] font-light mb-[25px]">
-          <a href="#" class="text-black hover:text-[#26633d] transition">Персональный тренинг</a>
-        </h2>
-        <p class="mb-2">1 час</p>
-        <p>RUB 700</p>
-        <button class="w-[124px] h-[40px] mt-[10px] text-white bg-black border border-black hover:opacity-70 transition">Записаться</button>
-      </div>
-
-      <div class="w-[281px] p-[31px] bg-white text-center">
-        <h2 class="text-[20px] font-light mb-[25px]">
-          <a href="#" class="text-black hover:text-[#26633d] transition">Тренинг для пар</a>
-        </h2>
-        <p class="mb-2">1 час 30 минут</p>
-        <p>RUB 1,200</p>
-        <button class="w-[124px] h-[40px] mt-[10px] text-white bg-black border border-black hover:opacity-70 transition">Записаться</button>
-      </div>
-
-      <div class="w-[281px] p-[31px] bg-white text-center">
+      <div class="w-[281px] p-[31px] bg-white text-center w-full sm:w-[45%] lg:w-[281px]">
         <h2 class="text-[20px] font-light mb-[25px]">
           <a href="#" class="text-black hover:text-[#26633d] transition">Корпоративная жизнь</a>
         </h2>
@@ -102,7 +81,7 @@
         <button class="w-[124px] h-[40px] mt-[10px] text-white bg-black border border-black hover:opacity-70 transition">Записаться</button>
       </div>
 
-      <div class="w-[281px] p-[31px] bg-white text-center">
+      <div class="w-[281px] p-[31px] bg-white text-center w-full sm:w-[45%] lg:w-[281px]">
         <h2 class="text-[20px] font-light mb-[25px]">
           <a href="#" class="text-black hover:text-[#26633d] transition">Групповой тренинг</a>
         </h2>
@@ -110,8 +89,7 @@
         <p>RUB 900</p>
         <button class="w-[124px] h-[40px] mt-[10px] text-white bg-black border border-black hover:opacity-70 transition">Записаться</button>
       </div>
-
-      <div class="w-[281px] p-[31px] bg-white text-center">
+      <div class="w-[281px] p-[31px] bg-white text-center w-full sm:w-[45%] lg:w-[281px]">
         <h2 class="text-[20px] font-light mb-[25px]">
           <a href="#" class="text-black hover:text-[#26633d] transition">Бизнес-тренинг</a>
         </h2>
@@ -120,43 +98,42 @@
         <button class="w-[124px] h-[40px] mt-[10px] text-white bg-black border border-black hover:opacity-70 transition">Записаться</button>
       </div>
     </div>
-  </div>
-</div>
+  </section>
 
-<!-- Footer -->
-<div class="w-full bg-[#57BBBF] py-[30px] px-4 flex flex-wrap justify-center gap-[40px]">
-  <div class="w-full md:w-[30%] flex flex-col">
-    <div class="w-[50px] h-[1.5px] bg-black mb-5"></div>
-    <h2 class="text-[23px] font-black tracking-[0.14em] mb-6">СВЯЖИТЕСЬ<br>СО МНОЙ</h2>
-    <div class="text-[15px] text-[#191717] leading-[1.7] tracking-[0.02em] space-y-3 mb-4">
-      <p>ул. Арбат, 1а, Москва, Россия</p>
-      <p>Телефон: +7 (495) 000-00-00</p>
-      <p>Факс: +7 (495) 000-00-00</p>
-      <p><a href="mailto:info@mysite.ru" class="text-black">info@mysite.ru</a></p>
-    </div>
-    <div class="flex gap-5 text-[23px]">
-      <a href="#"><ion-icon name="logo-vk"></ion-icon></a>
-      <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-      <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-      <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-      <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
-    </div>
-  </div>
 
-  <div class="w-full md:w-[35%]">
-    <form action="" class="space-y-3">
-      <input type="text" placeholder="Имя" class="w-full h-[40px] px-6 outline-none border hover:border-black transition"/>
-      <input type="email" placeholder="Эл. почта" class="w-full h-[40px] px-6 outline-none border hover:border-black transition"/>
-      <input type="tel" placeholder="Телефон" class="w-full h-[40px] px-6 outline-none border hover:border-black transition"/>
-      <textarea rows="8" placeholder="Добавьте сообщение..." class="w-full px-6 pt-3 resize-none outline-none border hover:border-black transition"></textarea>
-      <div class="flex justify-end">
-        <input type="submit" value="Отправить" class="w-[129px] h-[40px] mt-2 cursor-pointer text-white bg-black border-2 border-black hover:bg-transparent hover:text-black transition"/>
+  <footer class="w-full bg-[#57BBBF] py-10 px-4 flex flex-col md:flex-row gap-10 justify-center">
+    <div class="md:w-1/3 space-y-4">
+      <div class="w-[50px] h-[2px] bg-black"></div>
+      <h2 class="text-[23px] font-black tracking-[0.14em]">СВЯЖИТЕСЬ СО МНОЙ</h2>
+      <div class="text-[15px] text-[#191717] leading-[1.7]">
+        <p>ул. Арбат, 1а, Москва, Россия</p>
+        <p>Телефон: +7 (495) 000-00-00</p>
+        <p>Факс: +7 (495) 000-00-00</p>
+        <p><a href="mailto:info@mysite.ru" class="text-black">info@mysite.ru</a></p>
       </div>
-    </form>
-  </div>
-</div>
+      <div class="flex gap-4 text-[23px]">
+        <a href="#"><ion-icon name="logo-vk"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+      </div>
+    </div>
 
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <div class="md:w-1/2">
+      <form action="" class="space-y-3">
+        <input type="text" placeholder="Имя" class="w-full h-[40px] px-4 border hover:border-black transition"/>
+        <input type="email" placeholder="Эл. почта" class="w-full h-[40px] px-4 border hover:border-black transition"/>
+        <input type="tel" placeholder="Телефон" class="w-full h-[40px] px-4 border hover:border-black transition"/>
+        <textarea rows="6" placeholder="Добавьте сообщение..." class="w-full px-4 pt-2 resize-none border hover:border-black transition"></textarea>
+        <div class="flex justify-end">
+          <input type="submit" value="Отправить" class="w-[130px] h-[40px] text-white bg-black border border-black hover:bg-transparent hover:text-black transition"/>
+        </div>
+      </form>
+    </div>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
